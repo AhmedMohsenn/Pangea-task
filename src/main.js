@@ -1,8 +1,8 @@
 import '@babel/polyfill'
 import Vue from 'vue'
 import './plugins/vuetify'
-import App from './app'
-import store from './store'
+import App from './App'
+import store from './store/index'
 
 Vue.config.productionTip = false
 

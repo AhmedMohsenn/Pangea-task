@@ -13,7 +13,7 @@
       >
         <v-flex xs6>
           <TodoForm />
-          <TodoList/>
+          <!-- <TodoList/> -->
         </v-flex>
       </v-layout>
     </v-content>
