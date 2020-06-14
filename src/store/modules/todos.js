@@ -9,38 +9,36 @@ export default {
 
     getters: {
         todos: state => state.todos,
-        getTodoById: state => id => state.todos.filter(t => t.id == id)
     },
 
     mutations: {
         CREATE_TODO: (state, todo) => {
             state.todos.push(todo);
-            console.log(state.todos);
         },
 
-        UPDATE_TODO: (state, payload) => {
-            Object.assign(state.todos[payload.todoIndex], { completed: payload.completed });
+        COMPLETE_TODO: (state, todoIndex) => {
+            const currentTodo = state.todos[todoIndex];
+            currentTodo.completed = true;
+            state.todos.$set(todoIndex, currentTodo);
         },
 
-        DELETE_TODO: (state, todo) => {
-            const filteredTodos = state.todos(t => t.id !== todo.id);
-            state.todos = filteredTodos;
+        DELETE_TODO: (state, todoIndex) => {
+            state.todos.splice(todoIndex, 1);
         }
     },
 
     actions: {
-        addTodo: ({ commit, state }, todoText) => {
+        addTodo: ({ commit }, todoText) => {
             const todo = new Todo(todoText);
-            todo.id = state.todos.length;
             commit('CREATE_TODO', todo);
         },
 
-        updateTodoStatus: ({ commit }, payload) => {
-            commit('UPDATE_TODO', payload);
+        completeTodo: ({ commit }, todoIndex) => {
+            commit('COMPLETE_TODO', todoIndex);
         },
 
-        deleteTodo: ({ commit }, todo) => {
-            commit('DELETE_TODO', todo);
+        deleteTodo: ({ commit }, todoIndex) => {
+            commit('DELETE_TODO', todoIndex);
         }
     }
 }
