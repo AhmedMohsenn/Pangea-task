@@ -19,7 +19,7 @@ export default {
         COMPLETE_TODO: (state, todoIndex) => {
             const currentTodo = state.todos[todoIndex];
             currentTodo.completed = true;
-            state.todos.$set(todoIndex, currentTodo);
+            state.todos[todoIndex] = currentTodo;
         },
 
         DELETE_TODO: (state, todoIndex) => {

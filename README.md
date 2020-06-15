@@ -16,7 +16,7 @@ Our team was already able to complete the following:
 ## Mission
 - [ DONE ] Clone this repository into your account
 - [ DONE ] Create a named `vuex` module to hold your todos
-- [ ] Complete the CRUD features in the GUI and make sure they are reflected in the store
+- [ DONE ] Complete the CRUD features in the GUI and make sure they are reflected in the store
 - [ DONE ] Make sure the `todo-list` component dynamically displays the todos
 - [ DONE ] Write concise commit messages
 - [ ] Submit your git repository to hr@pangea-technology.com and describe your changes precisely

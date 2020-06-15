@@ -11,5 +11,9 @@ export class Todo {
     get completed() {
         return this._completed;
     }
+
+    set completed(completed) {
+        this._completed = completed;
+    }
 }
 
