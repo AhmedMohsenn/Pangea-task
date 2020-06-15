@@ -1,5 +1,4 @@
 import { Todo }  from "@/models/Todo.js";
-import { Todo } from "../../models/Todo";
 
 export default {
     namespaced: true,

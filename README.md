@@ -24,7 +24,7 @@ Our team was already able to complete the following:
 ## Bonus
 - [ ] Add [Vuex-ORM](https://vuex-orm.github.io/vuex-orm/)
 - [ ] Add [TypeScript](https://typescriptlang.org)
-- [ ] Document with [jsDoc](https://devdocs.io/jsdoc/) comments
+- [ DONE ] Document with [jsDoc](https://devdocs.io/jsdoc/) comments
 
 ## Please note
 - Pay attention to your code style and structure, don't ignore the eslint hints.
