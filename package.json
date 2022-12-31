@@ -15,13 +15,13 @@
   },
   "devDependencies": {
     "@babel/polyfill": "^7.0.0-beta.49",
-    "@vue/cli-plugin-babel": "^3.11.0",
-    "@vue/cli-plugin-eslint": "^3.0.3",
-    "@vue/cli-service": "^3.11.0",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-eslint": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
     "babel-plugin-transform-imports": "^1.4.1",
     "eslint-plugin-vue-types": "^1.0.1",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1",
+    "stylus-loader": "^7.1.0",
     "vue-cli-plugin-axios": "^0.0.4",
     "vue-cli-plugin-vuetify": "^0.1.6",
     "vue-template-compiler": "^2.5.17"
